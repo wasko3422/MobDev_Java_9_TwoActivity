@@ -69,4 +69,4 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     protected void onRestart() {
         super.onRestart();
         Log.d(TAG, "MainActivity: onRestart()");
-}
+}}
