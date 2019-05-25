@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener {
 
-    Button btnActTwo;
+    Button btnForward;
     final String TAG = "States";
 
     @Override
@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnActTwo = (Button) findViewById(R.id.btnActTwo);
-        btnActTwo.setOnClickListener(this);
+        btnForward = (Button) findViewById(R.id.btnActForward);
+        btnForward.setOnClickListener(this);
 
         Log.d(TAG, "MainActivity: onCreate()");
     }
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnActTwo:
+            case R.id.btnActForward:
                 Intent intent = new Intent(this, ActivityTwo.class);
                 startActivity(intent);
                 break;
