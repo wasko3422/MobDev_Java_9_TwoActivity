@@ -11,4 +11,9 @@
         android:layout_height="wrap_content"
         android:onClick="onClick"
         android:text="Go to Activity Two"></Button>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
